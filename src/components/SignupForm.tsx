@@ -13,7 +13,7 @@ import { toast } from "sonner";
 import { Loader2, CheckCircle } from "lucide-react";
 
 // Replace this with your actual Google Apps Script Web App URL
-const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyWinQbwsxc8MPNyxMgdEwfPZQdZdJAsdd2KdFO3lmcPQK7in3kt66K95wsAiDE50eV/exec";
 
 interface FormData {
   email: string;
