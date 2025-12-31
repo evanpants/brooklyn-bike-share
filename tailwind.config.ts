@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Space Grotesk', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +60,17 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        // Brand colors
+        brand: {
+          blue: "#34a0cd",
+          purple: "#7051a5",
+          red: "#e11c19",
+          orange: "#fc631b",
+          yellow: "#f2c21d",
+          teal: "#2ea2ce",
+          green: "#2f8736",
+          lime: "#80b939",
         },
       },
       borderRadius: {
