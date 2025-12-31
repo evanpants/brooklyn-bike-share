@@ -1,5 +1,7 @@
 import { SignupForm } from "@/components/SignupForm";
 import { Bike, Users, TreePine, ArrowRight, Heart } from "lucide-react";
+import heroBike from "@/assets/hero-bike.png";
+import cargoBikeIllustration from "@/assets/cargo-bike-illustration.png";
 
 const Index = () => {
   return (
@@ -47,6 +49,17 @@ const Index = () => {
               Join the waitlist
               <ArrowRight className="w-5 h-5" />
             </a>
+          </div>
+        </div>
+
+        {/* Hero Image */}
+        <div className="container mx-auto px-4 pb-12">
+          <div className="max-w-5xl mx-auto">
+            <img
+              src={heroBike}
+              alt="A mother riding a cargo bike with two children through Brooklyn with NYC skyline in the background"
+              className="w-full h-auto rounded-2xl shadow-xl"
+            />
           </div>
         </div>
       </header>
@@ -163,6 +176,15 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t">
         <div className="container mx-auto px-4">
+          {/* Cargo bike illustration */}
+          <div className="flex justify-center mb-8">
+            <img
+              src={cargoBikeIllustration}
+              alt="Illustration of a family on a cargo bike"
+              className="h-24 md:h-32 w-auto opacity-90"
+            />
+          </div>
+          
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Heart className="w-4 h-4 text-brand-red" />
