@@ -50,23 +50,21 @@ export function SignupForm() {
     setIsSubmitting(true);
 
     try {
-      // If using Google Apps Script
-      if (GOOGLE_SCRIPT_URL !== "YOUR_GOOGLE_APPS_SCRIPT_URL") {
-        await fetch(GOOGLE_SCRIPT_URL, {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email: formData.email,
-            zipCode: formData.zipCode || "Not provided",
-            interest: formData.interest || "Not specified",
-            childrenCount: formData.childrenCount || "Not provided",
-            timestamp: new Date().toISOString(),
-          }),
-        });
-      }
+      // Submit to Google Apps Script
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          zipCode: formData.zipCode || "Not provided",
+          interest: formData.interest || "Not specified",
+          childrenCount: formData.childrenCount || "Not provided",
+          timestamp: new Date().toISOString(),
+        }),
+      });
 
       setIsSubmitted(true);
       toast.success("Thanks for signing up! We'll be in touch soon.");
