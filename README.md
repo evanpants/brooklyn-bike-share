@@ -1,73 +1,81 @@
-# Welcome to your Lovable project
+# Brooklyn Bicycle Library
 
-## Project info
+A website for the Brooklyn Bicycle Library - helping families try electric cargo bikes before buying.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Project Information
 
-## How can I edit this code?
+**Website**: https://bikefamilies.nyc
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Fast build tool and development server
+- **TypeScript** - Type-safe JavaScript
+- **React** - UI framework
+- **shadcn-ui** - UI component library
+- **Tailwind CSS** - Utility-first CSS framework
 
-## How can I deploy this project?
+## Getting Started
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### Prerequisites
 
-## Can I connect a custom domain to my Lovable project?
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Yes, you can!
+### Setup
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```sh
+# Step 1: Clone the repository
+git clone https://github.com/evanpants/brooklyn-bike-share.git
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+# Step 2: Navigate to the project directory
+cd brooklyn-bike-share
+
+# Step 3: Install the necessary dependencies
+npm install
+
+# Step 4: Start the development server
+npm run dev
+```
+
+The development server will start at http://localhost:8080 with auto-reloading and instant preview.
+
+## Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
+
+### Project Structure
+
+- `src/pages/` - Page components
+- `src/components/` - Reusable components
+- `src/components/ui/` - shadcn-ui components
+- `public/` - Static assets
+- `index.html` - HTML template
+
+## Deployment
+
+This project is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. The deployment is handled by GitHub Actions (see `.github/workflows/deploy.yml`).
+
+### Manual Deployment
+
+If you need to deploy manually:
+
+1. Build the project: `npm run build`
+2. The `dist/` folder contains the production files
+3. Push to GitHub and the workflow will automatically deploy
+
+## Custom Domain
+
+The site is configured to use the custom domain **bikefamilies.nyc** via the `CNAME` file. This is automatically handled by GitHub Pages.
+
+## Contributing
+
+1. Make your changes
+2. Test locally with `npm run dev`
+3. Commit and push your changes
+4. GitHub Actions will automatically build and deploy

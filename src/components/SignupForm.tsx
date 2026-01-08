@@ -10,7 +10,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
-import { Loader2, CheckCircle } from "lucide-react";
+import { Loader2 } from "lucide-react";
+import { BicycleWheelIcon } from "@/components/BicycleWheelIcon";
 
 // Replace this with your actual Google Apps Script Web App URL
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyWinQbwsxc8MPNyxMgdEwfPZQdZdJAsdd2KdFO3lmcPQK7in3kt66K95wsAiDE50eV/exec";
@@ -79,7 +80,7 @@ export function SignupForm() {
   if (isSubmitted) {
     return (
       <div className="text-center py-8">
-        <CheckCircle className="w-16 h-16 text-brand-green mx-auto mb-4" />
+        <BicycleWheelIcon className="w-16 h-16 text-brand-green mx-auto mb-4" />
         <h3 className="font-display text-2xl font-bold mb-2">You're on the list!</h3>
         <p className="text-muted-foreground">
           We'll keep you updated on the Brooklyn Bicycle Library launch.
